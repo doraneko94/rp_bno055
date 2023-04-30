@@ -7,7 +7,6 @@ use panic_halt as _;
 use rp2040_hal as hal;
 use hal::pac;
 
-use embedded_hal::digital::v2::OutputPin;
 use rp2040_hal::clocks::Clock;
 
 use usb_device::{class_prelude::*, prelude::*};
