@@ -26,3 +26,7 @@ path = "src/led.rs"
 [[bin]]
 name = "led_timer"
 path = "src/led_timer.rs"
+
+[[bin]]
+name = "serial_hello"
+path = "src/serial_hello.rs"
