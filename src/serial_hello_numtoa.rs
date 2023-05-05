@@ -72,6 +72,7 @@ fn main() -> ! {
         count += 1;
         let _ = serial.write(b"Hello, world! x ");
         let _ = serial.write(count.numtoa(10, &mut buf));
+        let _ = serial.write(b"\r\n");
     }
 }
 
