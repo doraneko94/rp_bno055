@@ -18,6 +18,7 @@ futures = { version = "0.3.21", default-features = false }
 rp-pico = "0.7.0"
 embedded-hal = { version = "0.2.7", features = ["unproven"] }
 panic-halt = "0.2.0"
+numtoa = "0.2.4"
 
 [[bin]]
 name = "led"
@@ -30,3 +31,7 @@ path = "src/led_timer.rs"
 [[bin]]
 name = "serial_hello"
 path = "src/serial_hello.rs"
+
+[[bin]]
+name = "serial_hello_numtoa"
+path = "src/serial_hello_numtoa.rs"
