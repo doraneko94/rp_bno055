@@ -19,6 +19,9 @@ rp-pico = "0.7.0"
 embedded-hal = { version = "0.2.7", features = ["unproven"] }
 panic-halt = "0.2.0"
 numtoa = "0.2.4"
+serial_write = "0.1"
+fugit = "0.3.6"
+bno055 = { git = "https://github.com/eupn/bno055", rev = "58970ced667deddd09933954b1a928587226daf7" }
 
 [[bin]]
 name = "led"
@@ -35,3 +38,32 @@ path = "src/serial_hello.rs"
 [[bin]]
 name = "serial_hello_numtoa"
 path = "src/serial_hello_numtoa.rs"
+
+[[bin]]
+name = "serial_hello_count"
+path = "src/serial_hello_count.rs"
+
+[[bin]]
+name = "imu_base"
+path = "src/imu_base.rs"
+
+[[bin]]
+name = "imu_const"
+path = "src/imu_const.rs"
+
+[[bin]]
+name = "imu_save"
+path = "src/imu_save.rs"
+
+[[bin]]
+name = "imu_test"
+path = "src/imu_test.rs"
+
+[profile.release]
+codegen-units = 1
+debug = 2
+debug-assertions = false
+incremental = false
+lto = 'fat' # <-- HERE
+opt-level = 3
+overflow-checks = false
