@@ -55,10 +55,6 @@ path = "src/imu_const.rs"
 name = "imu_save"
 path = "src/imu_save.rs"
 
-[[bin]]
-name = "imu_test"
-path = "src/imu_test.rs"
-
 [profile.release]
 codegen-units = 1
 debug = 2
