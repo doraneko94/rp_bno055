@@ -29,7 +29,7 @@ const XTAL_FREQ_HZ: u32 = 12_000_000u32;
 
 const DATA_SIZE: usize = FLASH_SECTOR_SIZE as usize;
 const CALIB_SIZE: usize = 22;
-const IDENT_KEY: u8 = 191;
+const IDENT_KEY: u8 = 192;
 const IDENT_SIZE: usize = DATA_SIZE - CALIB_SIZE;
 
 #[rp2040_hal::entry]
@@ -110,7 +110,7 @@ fn main() -> ! {
     
     let mut calib_data = [0u8; DATA_SIZE];
     read_flash(&mut calib_data);
-    if check_identification(&calib_data, IDENT_KEY, IDENT_SIZE) {
+    if check_identification(&calib_data[..IDENT_SIZE], IDENT_KEY) {
         let calib = read_calib_from_buf(&calib_data);
         imu.set_calibration_profile(calib, &mut delay).unwrap();
     } else {

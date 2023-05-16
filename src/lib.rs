@@ -52,18 +52,15 @@ pub fn gen_identification(data: &mut [u8], key: u8) {
         .collect::<()>();
 }
 
-pub fn check_identification(data: &[u8], key: u8, size: usize) -> bool {
+pub fn check_identification(data: &[u8], key: u8) -> bool {
     let key_usize = key as usize;
-    let mut count: usize = 0;
     let mut valid = true;
-    let _  = data.iter()
-        .enumerate()
-        .map(|(i, &elem)| {
-            if valid {
-                if (i % key_usize) as u8 == elem { count += 1; }
-                else { valid = false; }
-            }
-        })
-        .collect::<()>();
-    count >= size
+    for (i, &elem) in data.iter().enumerate() {
+        if (i & key_usize) as u8 != elem {
+            valid = false;
+            break;
+        }
+    }
+    
+    valid
 }
