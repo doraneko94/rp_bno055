@@ -55,6 +55,10 @@ path = "src/imu_const.rs"
 name = "imu_save"
 path = "src/imu_save.rs"
 
+[[bin]]
+name = "imu_save_plot"
+path = "src/imu_save_plot.rs"
+
 [profile.release]
 codegen-units = 1
 debug = 2
