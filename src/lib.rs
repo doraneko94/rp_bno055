@@ -56,7 +56,7 @@ pub fn check_identification(data: &[u8], key: u8) -> bool {
     let key_usize = key as usize;
     let mut valid = true;
     for (i, &elem) in data.iter().enumerate() {
-        if (i & key_usize) as u8 != elem {
+        if (i % key_usize) as u8 != elem {
             valid = false;
             break;
         }
