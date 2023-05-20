@@ -5,4 +5,4 @@
 
 # 書籍の情報
 
-["サポートページ"](https://ushitora.net/rust_pico_imu_book)を御覧ください。
+[サポートページ](https://ushitora.net/rust_pico_imu_book)を御覧ください。
