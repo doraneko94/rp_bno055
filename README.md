@@ -3,6 +3,6 @@
 艮電算術研究所の書籍「Rust x Raspberry Pi Picoで実装するIMUからの姿勢情報の取得と応用」
 のサンプルコードです。
 
-# サポートページ
+# 書籍の情報
 
-[](https://ushitora.net/rust_pico_imu_book)を御覧ください。
+["サポートページ"](https://ushitora.net/rust_pico_imu_book)を御覧ください。
