@@ -13,7 +13,7 @@ cortex-m-rt = "0.7.1"
 embedded-time = "0.12.1"
 usb-device = "0.2.8"
 usbd-serial = "0.1.1"
-usbd-hid = "0.5.2"
+usbd-hid = "0.8.2"
 futures = { version = "0.3.21", default-features = false }
 rp-pico = "0.7.0"
 embedded-hal = { version = "0.2.7", features = ["unproven"] }
