@@ -1,8 +1,8 @@
 # rp_bno055
 
-艮電算術研究所の書籍「Rust x Raspberry Pi Picoで実装するIMUからの姿勢情報の取得と応用」
+U-知能デバイス研究所の書籍「Rust×Raspberry Pi Picoで本気の組み込み開発　IMUで姿勢情報を取得しよう！」
 のサンプルコードです。
 
 # 書籍の情報
 
-[サポートページ](https://ushitora.net/rust_pico_imu_book)を御覧ください。
+[インプレス NextPublishingの書籍ページ](https://nextpublishing.jp/book/17045.html)を御覧ください。
