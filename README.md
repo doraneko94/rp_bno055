@@ -1,8 +1,11 @@
 # rp_bno055
 
-U-知能デバイス研究所の書籍「Rust×Raspberry Pi Picoで本気の組み込み開発　IMUで姿勢情報を取得しよう！」
-のサンプルコードです。
+This is the sample codes of the book
+"Embedded development with Rust and Raspberry Pi Pico"
+published by J-IMPACT.
 
-# 書籍の情報
+# Book Infomation
 
-[インプレス NextPublishingの書籍ページ](https://nextpublishing.jp/book/17045.html)を御覧ください。
+The English version is available for free.
+
+If you would like to translate and publish in your country, please contact us via Issues.
